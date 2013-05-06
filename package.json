@@ -1,0 +1,15 @@
+{
+    "author": "Dave Shea", 
+    "contributors": [
+        {
+            "email": "nhusher@gmail.com", 
+            "name": "Nick Husher"
+        }
+    ], 
+    "dependencies": {
+        "node-static": "*"
+    }, 
+    "description": "CSS Zen Garden", 
+    "name": "css-zen-garden",
+    "version": "0.0.1"
+}
