@@ -88,8 +88,8 @@
         <ul>
           <% this.designs.forEach(function(design) { %>
             <li>
-              <a href="/?cssfile=${{ design.path }}&amp;page=${{ this.page }}" class="design-name">${design.name}</a> by
-              <a href="${{ design.authorUrl }}" class="designer-name">${design.author}</a>
+              <a href="/?cssfile=${{ design.path }}&amp;page=${{ this.page }}" class="design-name">${{design.name}}</a> by
+              <a href="${{ design.authorUrl }}" class="designer-name">${{design.author}}</a>
             </li>
           <% }, this); %>
         </ul>
