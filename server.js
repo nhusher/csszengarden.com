@@ -11,6 +11,12 @@ var fs       = require('fs'),
     staticServer = new static.Server('./designs'),
     
     NUM_DESIGNS = 8;
+    
+designs.sort(function(a,b) {
+    return parseFloat(b.design) - parseFloat(a.design);
+}).forEach(function(design) {
+    design.path = design.design + '/' + design.design + '.css';
+});
 
 http.createServer(function (req, res) {
     var path   = req.url.indexOf('?') === -1 ? req.url : req.url.split('?')[0],
